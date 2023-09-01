@@ -222,7 +222,7 @@ class behat_app_helper extends behat_base {
                 }
             }
 
-            throw new DriverException('Moodle App not found in browser');
+            throw new DriverException('ThinkLearn App not found in browser');
         }, false, 60);
 
         try {
@@ -234,7 +234,7 @@ class behat_app_helper extends behat_base {
 
             $this->runtime_js("init($initoptions)");
         } catch (Exception $error) {
-            throw new DriverException('Moodle App not running or not running on Automated mode.');
+            throw new DriverException('ThinkLearn App not running or not running on Automated mode.');
         }
 
         if ($restart) {
@@ -253,7 +253,7 @@ class behat_app_helper extends behat_base {
                     return true;
                 }
 
-                throw new DriverException('Moodle App not launched properly');
+                throw new DriverException('ThinkLearn App not launched properly');
             }, false, 60);
         }
 
