@@ -457,7 +457,7 @@ class behat_app_helper extends behat_base {
                     if ($found) {
                         return true;
                     }
-                    throw new DriverException('Moodle App custom URL page not loaded');
+                    throw new DriverException('Thinklearn App custom URL page not loaded');
                 }, false, 30);
         }
 
